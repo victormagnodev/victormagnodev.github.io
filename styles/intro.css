@@ -1,0 +1,139 @@
+.intro {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.intro img {
+  object-fit: cover;
+  object-position: 0px 0px;
+  border-radius: 50%;
+  height: 300px;
+  min-width: 300px;
+  transition: 1s;
+  box-shadow: rgb(151, 200, 196) 0px 8px 24px, rgba(17, 17, 26, 0.1)0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.intro img:hover {
+  content: url(../img/me02.jpg);
+  object-position: 0 -20px;
+  border-radius: 20%;
+  box-shadow: rgb(102, 233, 222) 0px 8px 24px, rgba(17, 17, 26, 0.1)0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.header a:hover {
+  color: turquoise;
+}
+
+.header a:active {
+  color: rgb(19, 141, 128);
+}
+
+.intro h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.intro h1::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 10px;
+  left: -35px;
+  top: 12px;
+  z-index: -1;
+  background-color: turquoise;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+.intro h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 10px;
+  left: 440px;
+  bottom: 12px;
+  z-index: -1;
+  background-color: turquoise;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 870px) {
+  .intro h1::after {
+    left: 80px;
+  }
+}
+
+.intro p {
+  font-size: 1.5rem;
+  color: rgb(8, 160, 145);
+}
+
+@media (max-width: 1000px) {
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .intro h1::before {
+    width: 80px;
+  }
+
+  .intro h1::after {
+    left: 280px;
+    width: 80px;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:760px){
+  .intro h1::after{
+    left: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .intro {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .intro h1::after {
+    left: 45px;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+
+  .intro img {
+    justify-self: center;
+  }
+
+  .intro h1 {
+    text-align: center;
+  }
+
+  .intro h1::before {
+    display: none;
+  }
+
+  .intro h1::after {
+    position: absolute;
+    transform: rotate(0deg);
+    bottom: 50px;
+    width: 200px;
+  }
+}

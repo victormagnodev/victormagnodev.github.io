@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+  color: #131313;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.subtitle {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 5ch;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:1000px){
+  .subtitle{
+    font-size: 6rem;
+  }
+}
+
+@media (max-width:700px){
+
+  .subtitle{
+      color: #131313;
+      max-width: initial !important;
+      font-size: 3.5rem;
+  }
+}

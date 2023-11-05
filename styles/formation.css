@@ -1,0 +1,108 @@
+.formation-bg {
+  max-width: 100vw;
+  background-color: rgb(19, 141, 128);
+}
+
+.formation-limit {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 80px 20px;
+  margin: 0 auto;
+  gap: 100px;
+}
+
+.formation-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.formation-bg .subtitle {
+  max-width: 4ch;
+}
+
+.formation-text {
+  max-width: 45ch;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  text-indent: 60px;
+  color: #ddd;
+}
+
+.formation-text strong {
+  color: #fff;
+}
+
+.formation-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 200px;
+}
+
+.formation-title,
+.formation-uni {
+  text-transform: uppercase;
+  color: #ddd;
+}
+
+.formation {
+  position: relative;
+  padding: 20px 0px;
+  color: #fff;
+}
+
+.formation::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 20px;
+  background-color: turquoise;
+  left:-23px;
+  transition: .3s;
+}
+
+.formation-container:hover .formation::before{
+    transform: scale(1, 7) translate(0, 1.4px);
+}
+
+.extra-course {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.extra-subtitle {
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.extra-course .extra-name {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.extra-name {
+  color: #fff;
+  font-weight: bold;
+}
+
+.extra-h {
+  color: turquoise;
+  justify-self: end;
+}
+
+.extra-language {
+  display: grid;
+  gap: 10px;
+}
+
+@media (max-width:700px){
+    .formation-limit{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
