@@ -43,8 +43,13 @@
   display: grid;
   font-size: 2rem;
   font-weight: bolder;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
+}
+
+.footer-list li{
+  text-decoration: none;
+  font-size: 1.3rem;
 }
 
 .footer-list a {

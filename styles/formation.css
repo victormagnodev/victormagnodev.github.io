@@ -3,15 +3,6 @@
   background-color: rgb(19, 141, 128);
 }
 
-.formation-limit {
-  max-width: 1200px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  padding: 80px 20px;
-  margin: 0 auto;
-  gap: 100px;
-}
-
 .formation-content {
   display: flex;
   flex-direction: column;
