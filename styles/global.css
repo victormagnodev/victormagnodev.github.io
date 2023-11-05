@@ -46,3 +46,9 @@ img{
       font-size: 3.5rem;
   }
 }
+
+@media (max-width:600px){
+  .subtitle{
+    font-size: 3rem;
+  }
+}
