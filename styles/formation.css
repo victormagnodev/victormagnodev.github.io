@@ -59,12 +59,12 @@
   width: 5px;
   height: 20px;
   background-color: turquoise;
-  left:-23px;
-  transition: .3s;
+  left: -23px;
+  transition: 0.3s;
 }
 
-.formation-container:hover .formation::before{
-    transform: scale(1, 7) translate(0, 1.4px);
+.formation-container:hover .formation::before {
+  transform: scale(1, 7) translate(0, 1.4px);
 }
 
 .extra-course {
@@ -100,9 +100,13 @@
   gap: 10px;
 }
 
-@media (max-width:700px){
-    .formation-limit{
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+@media (max-width: 700px) {
+  .formation-limit {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .formation-limit .subtitle{
+    color: #fff;
+  }
 }
