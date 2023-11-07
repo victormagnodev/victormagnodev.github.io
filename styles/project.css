@@ -28,9 +28,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  align-items: center;
+  align-items: initial;
   line-height: 1.4;
   row-gap: 0px;
+  margin-bottom: 40px;
 }
 
 .project-title {
@@ -53,6 +54,10 @@
   background-color: turquoise;
   top: 5px;
   left: 0px;
+}
+
+.project-text{
+  margin-bottom: 20px;
 }
 
 .button {
@@ -91,7 +96,7 @@
   }
   .project {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
   }
 }
 
@@ -116,7 +121,7 @@
 
   .project {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
     gap: 20px;
   }
 }
