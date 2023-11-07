@@ -14,9 +14,11 @@
 .project-presentation {
   font-size: 1.5rem;
   line-height: 1.3;
-  margin-bottom: 60px;
   max-width: 45ch;
+  margin-bottom: 60px;
   color: #ddd;
+  text-indent: 60px;
+  text-align: start;
 }
 
 .project-presentation strong {
